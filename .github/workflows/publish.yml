@@ -29,6 +29,6 @@ jobs:
         with:
           push: true
           tags: |
-            driv3r/ruru-lambda:latest
-            driv3r/ruru-lambda:build-ruby2.7
-            driv3r/ruru-lambda:${{ github.event.release.tag_name }}
+            babbel/ruru-lambda:latest
+            babbel/ruru-lambda:build-ruby2.7
+            babbel/ruru-lambda:${{ github.event.release.tag_name }}
