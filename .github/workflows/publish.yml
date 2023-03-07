@@ -30,5 +30,6 @@ jobs:
         with:
           push: true
           tags: |
-            ghcr.io/babbel/ruru-lambda:${{ github.event.release.tag_name }}
+            ghcr.io/babbel/ruru-lambda:latest
             ghcr.io/babbel/ruru-lambda:build-ruby2.7
+            ghcr.io/babbel/ruru-lambda:${{ github.event.release.tag_name }}
