@@ -15,7 +15,7 @@ jobs:
         uses: docker/setup-qemu-action@v1
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v3
 
       - name: Login to Container Registry
         uses: docker/login-action@v2
@@ -32,5 +32,5 @@ jobs:
           push: true
           tags: |
             ghcr.io/babbel/ruru-lambda:latest
-            ghcr.io/babbel/ruru-lambda:build-ruby2.7
+            ghcr.io/babbel/ruru-lambda:build-ruby3.2
             ghcr.io/babbel/ruru-lambda:${{ github.event.release.tag_name }}
